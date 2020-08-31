@@ -1,0 +1,3 @@
+#+TITLE: Go lang Playground
+
+go 言語に入門します
