@@ -7,7 +7,11 @@ import (
 )
 
 func main() {
-	n, _ := strconv.Atoi(os.Args[1])
+	n, err := strconv.Atoi(os.Args[1])
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
 	for i := 1; i <= n; i++ {
 		if i%15 == 0 {
 			fmt.Println("FizzBuzz")
